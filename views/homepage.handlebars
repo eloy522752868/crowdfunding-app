@@ -1,0 +1,11 @@
+<!-- Loop over each user object -->
+{{#each projects as |project| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6">
+    <!-- Render user-specific data with Handlebars.js expressions -->
+    <h2>{{project.name}}</h2>
+    <h3>{{project.needed_funding}}</h3>
+    <p>{{project.description}}</p>
+  </div>
+</div>
+{{/each}}
